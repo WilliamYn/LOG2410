@@ -16,5 +16,5 @@ ArrosoirRotatif::ArrosoirRotatif(int vitesseAngulaire) {
 int ArrosoirRotatif::arroser(int debit) {
     // À COMPLÉTER
     // retourner le débit * la vitesse angulaire
-    return 0;
+    return debit * m_vitesseAngulaire;
 }

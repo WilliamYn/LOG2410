@@ -17,5 +17,5 @@ ArrosoirOscillant::ArrosoirOscillant(int distance, int vitesse) {
 int ArrosoirOscillant::arroser(int debit) {
     // À COMPLÉTER
     // retourner le débit + la distance * la vitesse
-    return 0;
+    return debit + m_distance*m_vitesse;
 }

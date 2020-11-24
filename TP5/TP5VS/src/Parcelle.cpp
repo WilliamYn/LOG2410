@@ -15,6 +15,7 @@ Parcelle::Parcelle() {
 void Parcelle::arroser(const AbsConfigurationArrosage& absConfigurationArrosage, int debit, int duree) {
     // À COMPLÉTER
     // ajouter à m_humidite la quantite d'arrosage obtenue avec absConfigurationArrosage
+    m_humidite += absConfigurationArrosage.obtenirQuantiteArrosage(debit, duree);
 }
 
 void Parcelle::simulerTranspiration() {

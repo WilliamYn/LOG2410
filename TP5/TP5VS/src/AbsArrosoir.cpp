@@ -15,5 +15,6 @@ int AbsArrosoir::activer(int debit, int duree) {
     // d'abord, déclarer la méthode virtuelle "arroser(debit)" dans AbsArrosoir.h
     // appeller la méthode virtuelle "arroser(debit)", et multiplier ce résultat par "duree"
     // retourner le résultat final
-    return 0;
+    return arroser(debit) * duree;
 }
+

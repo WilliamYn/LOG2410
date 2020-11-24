@@ -25,18 +25,18 @@ int AbsConfigurationArrosage::obtenirQuantiteArrosage(int debit, int duree) cons
 
     // À COMPLÉTER
     // créer les arrosoirs en utilisant la méthode virtuelle qui sera implémentée dans les enfants de AbsConfigurationArrosage
-    std::list<AbsArrosoir*> arrosoirs; // = ...
+    std::list<AbsArrosoir*> arrosoirs = creerArrosoirs(); // = ...
 
     // calculer le total d'arrosage en utilisant la fonction activer() sur chaque arrosoir de la liste créée
     int totalArrosage = 0;
     for (AbsArrosoir* arrosoir: arrosoirs) {
         // À COMPLÉTER
-        //totalArrosage += ...
+        totalArrosage += arrosoir->activer(debit, duree);
     }
 
     // À COMPLÉTER
     // delete la liste en utilisant deleteListeArrosoirs
-    //deleteListeArrosoirs(...);
+    deleteListeArrosoirs(arrosoirs);
 
     // retourner le résultat
     return totalArrosage;

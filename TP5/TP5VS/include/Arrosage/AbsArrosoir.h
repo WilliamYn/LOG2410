@@ -16,7 +16,7 @@ class AbsArrosoir {
     protected:
         // À COMPLÉTER
         // déclarer la méthode virtuelle "arroser()" qui prend en paramètre "int debit"
-        
+        virtual int arroser(int debit){};
 };
 
 #endif
